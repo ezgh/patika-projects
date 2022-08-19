@@ -1,8 +1,9 @@
 let name = prompt("Hello! Please enter your name.");
 
-document.querySelector("#myName").innerHTML = name;
+document.querySelector("#myName").innerHTML = name; //uses the input of the prompt as the name.
 
 function showTime() {
+  // shows the current date
   const date = new Date();
 
   let day = date.getDate();
@@ -40,7 +41,6 @@ function showTime() {
 
   document.querySelector("#myClock").innerHTML = currentDate;
 
-  setTimeout(showTime, 1000);
+  setTimeout(showTime, 1000); //calls the function in every 1000 milliseconds to run the clock.
 }
-
 showTime();
